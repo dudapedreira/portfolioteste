@@ -1,0 +1,392 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+	font-size: 1vw;
+}
+
+body {
+	background-color: #D3D3D3;
+	margin: 0;
+	padding: 0;
+	color: #2b2b2b;
+	font-weight: 300;
+	font-family: 'Fira Sans', sans-serif;
+
+
+}
+
+/*----------------------------------------LADO DIREITO E ESQUERDO*/
+
+.teste {
+display: flex;
+right: 0;
+position: fixed;
+background-color: #D3D3D3; 
+width: 100%;
+justify-content: space-between;
+border-bottom: 1px solid  #4a4a4a;
+z-index: 10;
+}
+
+.ladoEsquerdo {
+width:50%;
+height:100vh;
+position: fixed;
+left: 0;
+top: 0;
+border-right: 1px solid  #4a4a4a;
+
+}
+
+.ladoDireito {
+width: 50%;
+float: right;
+height: auto;
+}
+
+ 
+/*----------------------------------------FONTES E tIPOS DE ESCRITA*/
+
+.fonteForte {
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.fonteForte a:hover {
+	cursor: pointer;
+	color: white;
+
+}
+
+.fonteTexto {
+	font-size: 0.95vw;
+	font-weight: 300;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.fonteFormato {
+	font-size: 1vw;
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+	font-family: 'Fira Sans', sans-serif;
+	font-style: italic;
+}
+
+.fonteFormato a:hover {
+	cursor: pointer;
+}
+
+.participa {
+	color: black;
+	font-size: 1.05vw;
+	text-decoration: underline;
+}
+
+
+
+/*----------------------------------------TITULO NOME DUDA PEDREIRA*/
+
+.caixaNomeDuda {
+	display: flex;
+	padding: 10px 0px 10px 70px;
+}
+	
+.nomeDuda a{
+	text-decoration: none;
+	color: black;
+}
+
+.nomeDuda a:hover{
+	cursor: pointer;
+	color: white;
+}
+
+/*----------------------------------------*ENGLISH BUTTON*/
+.english {
+	right: 0;
+	padding: 10px 45px 0px 0px;	
+
+}
+
+.english a{
+	text-decoration: underline;
+	color: black;
+}
+
+.english a:hover{
+	cursor: pointer;
+	color: white;
+}
+
+/*----------------------------------------*TEXTO + PALAVRAS CHAVE*/
+
+
+.caixaSobre  {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	border-bottom: solid 1px  #4a4a4a;
+	margin-top: 55px;
+}
+
+.caixaNomeProjeto { 
+	display: flex; 	
+	justify-content: flex-end;
+	padding-right: 45px;
+}
+
+
+.descritivo {
+	text-align: justify;
+	line-height: 1.5;
+	text-indent: 45px;
+ 	padding: 0 6% 0 6%;			
+}
+
+
+.instagram { 
+	align-self: flex-end;
+	padding: 0px 7% 2% 7%;
+ }
+
+ .instagram a{
+	text-decoration: underline;
+	color: black;
+	font-style: italic;
+}
+
+.instagram a:hover{
+	cursor: pointer;
+	color: white;
+}
+
+
+/*----------------------------------------*INDEX DE PROJETOS */
+
+.index {
+	grid-area: index;
+	display: flex;
+	flex-direction: column;
+	width: 93%;
+	line-height: 1.6;	
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 2% 0% 0 7%;	
+}
+
+a:hover {
+	color: white;
+
+}
+
+/*----------------------------------------*LADO DIREITO DAS FOTOS*/
+
+
+.fotoContainer1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.fotoContainer1  img {
+	max-width: 100%;
+	/*border: 2px solid white;*/
+}
+
+.primeira {
+	margin-top: 20px;
+}
+
+.fotoContainer1 p {
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+
+.imagem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	padding-top: 5%;
+
+}
+
+.imagem2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 7%;
+}
+
+.ultima {
+	margin-bottom: 30px;
+}
+
+.profile {
+	width: 35%;
+	margin-top: 60px;
+}
+
+
+.infosContatoCaixa {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding: 0 0 0 0;
+	align-items: center;
+	line-height: 2.0;
+}
+
+.infosContatoCaixa a{ 
+	text-decoration: none;
+	color: black;
+ }
+
+
+.desenvolverdor {
+	padding-top: 10%; 
+}
+
+.recreo { 
+padding-top: 20%;
+width: 80%;
+}
+
+
+
+/*----------------------------------------*TELA QUANDO CRESCE*/
+
+
+@media screen and (min-width: 1500px) {
+
+
+.fonteForte {
+	font-size: 20px;
+}
+
+.fonteFormato {
+font-size: 16px;
+}
+
+.fonteTexto {
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+
+}
+}
+
+@media screen and (max-width: 1100px) {
+
+
+.fonteForte {
+	font-size: 1.6vw;
+}
+
+.fonteFormato {
+font-size: 1.3vw;
+}
+
+.fonteTexto {
+	font-size: 1.3vw;
+}
+
+.fotoContainer1 p {
+	font-size: 1.3vw;
+}
+
+
+}
+
+
+/*----------------------------------------*MODO RESPONSIVO CELLPHONE */
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+
+.ladoEsquerdo {
+	float: none;
+	width: 100%;
+	position: relative;
+	height: auto;
+	border-right: none;
+}
+
+.ladoDireito {
+	width: 100%;
+	float: none;
+}
+
+.teste {
+position: relative;
+width: 100%;
+display: flex;
+margin-right: 0px;
+}
+
+.caixaNomeDuda {
+	display: flex;
+	padding: 2% 0px 2% 10%;
+}
+
+.english {
+	padding: 0% 10% 2% 0px;
+	align-self: flex-end;	
+}
+
+.index {
+	border-bottom: 1px solid  #4a4a4a;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.caixaSobre {
+	margin-top: 8px;
+
+}
+
+.descritivo {
+	margin-top: -5px;
+}
+
+.fonteForte {
+	font-size: 3vw;
+}
+
+.fonteTexto {
+	font-size: 2.7vw;
+}
+
+.fonteFormato {
+	font-size: 2.5vw;
+}
+
+.participa {
+	font-size: 2.5vw;
+}
+
+.fotoContainer1 p {
+	font-size: 2.3vw;
+}
+
+.primeira {
+	margin-top: 1%;
+}
+
+.desenvolverdor {
+	margin-bottom: 20px;
+}
+
+
+}
